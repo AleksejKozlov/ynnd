@@ -1,0 +1,48 @@
+header {
+	position: relative;
+	min-height: 80px;
+}
+
+.header-logo {
+	width: 307px;
+	height: 67px;
+	background-position: 0 0;
+	text-indent: -9999px;
+
+	position: absolute;
+	top: 13px;
+	left: 0;
+}
+
+.header-logo-link {
+	display: block;
+	height: 100%;
+}
+
+.header-nav {
+	position: absolute;
+	top: 8px;
+	right: 50px;
+
+	& > li {
+		float: left;
+	
+		&:first-child > a {
+			border-left: 0;
+		}
+	}
+}
+
+.header-nav-link {
+	text-decoration: none;
+	color: #00ccff;
+	font-weight: 700;
+	border-left: 1px solid #00ccff;
+	font-size: 0.8em;
+	padding: 0 10px;
+	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
