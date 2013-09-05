@@ -17,6 +17,24 @@ body
 	opacity: 0.9;
 }
 
+.main-panel {
+	position: relative;
+	background-color: green;
+	min-height: 500px;
+}
+
 .sprites {
 	background: url('../img/sprites.png') 0 0 no-repeat;
+}
+
+.clear:before,
+.clear:after {
+    content:"";
+    display:table;
+}
+.clear:after {
+    clear:both;
+}
+.clear {
+    zoom:1;
 }

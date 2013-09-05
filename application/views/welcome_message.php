@@ -4,21 +4,45 @@
 	<meta charset="utf-8">
 	<title>Welcome to CodeIgniter</title>
     
-    <link rel="stylesheet" href="<?php echo base_url();?>/static/css/default.css">
-	<link rel="stylesheet" href="<?php echo base_url();?>/static/css/core.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>static/css/default.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>static/css/core.css">
+    
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
     <div class="content">
             
         <header>            
             <h1 class="sprites header-logo"><a href="<?php echo base_url();?>" class="header-logo-link">Your Name's Not Down</a></h1>  
-
+    
             <ul class="header-nav">
                 <li><a href="" class="header-nav-link">About</a></li>
                 <li><a href="" class="header-nav-link">Register</a></li>
                 <li><a href="" class="header-nav-link">Sign in</a></li>
             </ul>
+            
+            <span class="header-location">Location</span>
         </header>
+        
+        <nav>
+            <span class="main-nav-side left"></span>
+            <span class="main-nav-side right"></span>
+            
+            <ul class="main-nav">
+                <li><a class="nav-link" href="">Events</a></li>
+                <li><a class="nav-link" href="">Club &amp; Venues</a></li>
+            </ul>
+        </nav>
+        
+        <section class="main-panel">
+            <form class="search-panel">
+                <label>Search</label>
+                <input type="text" />
+                <button type="submit">Go</button>
+            </form>
+        </section>
         
         <section class="logo-carousel-panel">
             <span class="logo-carousel-side left"></span>
@@ -26,19 +50,19 @@
             
             <ul class="logo-carousel">
                 <li>
-                    <a href="" title="Club Name" style="background: url(<?php echo base_url();?>/static/img/club.png) 0 0; width: 206px; height: 63px;">Club Name</a>
+                    <a href="" title="Club Name" style="background: url(<?php echo base_url();?>static/img/club.png) 0 0; width: 206px; height: 63px;">Club Name</a>
                 </li>
                 <li>
-                    <a href="" title="Club Name" style="background: url(<?php echo base_url();?>/static/img/club-2.png) 0 0; width: 185px; height: 73px;">Club Name</a>
+                    <a href="" title="Club Name" style="background: url(<?php echo base_url();?>static/img/club-2.png) 0 0; width: 185px; height: 73px;">Club Name</a>
                 </li>
                 <li>
-                    <a href="" title="Club Name" style="background: url(<?php echo base_url();?>/static/img/club.png) 0 0; width: 206px; height: 63px;">Club Name</a>
+                    <a href="" title="Club Name" style="background: url(<?php echo base_url();?>static/img/club.png) 0 0; width: 206px; height: 63px;">Club Name</a>
                 </li>
                 <li>
-                    <a href="" title="Club Name" style="background: url(<?php echo base_url();?>/static/img/club-2.png) 0 0; width: 185px; height: 73px;">Club Name</a>
+                    <a href="" title="Club Name" style="background: url(<?php echo base_url();?>static/img/club-2.png) 0 0; width: 185px; height: 73px;">Club Name</a>
                 </li>
                 <li>
-                    <a href="" title="Club Name" style="background: url(<?php echo base_url();?>/static/img/club.png) 0 0; width: 206px; height: 63px;">Club Name</a>
+                    <a href="" title="Club Name" style="background: url(<?php echo base_url();?>static/img/club.png) 0 0; width: 206px; height: 63px;">Club Name</a>
                 </li>
             </ul>
         </section> 

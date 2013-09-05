@@ -1,6 +1,6 @@
 header {
 	position: relative;
-	min-height: 80px;
+	height: 80px;
 }
 
 .header-logo {
@@ -11,7 +11,7 @@ header {
 
 	position: absolute;
 	top: 13px;
-	left: 0;
+	left: 20px;
 }
 
 .header-logo-link {
@@ -22,7 +22,7 @@ header {
 .header-nav {
 	position: absolute;
 	top: 8px;
-	right: 50px;
+	right: 10px;
 
 	& > li {
 		float: left;
@@ -45,4 +45,13 @@ header {
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+.header-location {
+	font-size: 1.3em;
+	color: #a3b6c3;
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	text-transform: uppercase;
 }
