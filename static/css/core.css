@@ -1,12 +1,16 @@
+html, body {
+  height: 100%; }
+
 body {
   background: black url("../img/bg.jpg") 50% 0 no-repeat; }
 
 .content {
-  background-color: #111621;
-  opacity: 0.9;
   width: 660px;
   margin: 0 auto;
-  min-height: 800px; }
+  min-height: 100%;
+  position: relative;
+  background-color: #111621;
+  opacity: 0.9; }
 
 .sprites {
   background: url("../img/sprites.png") 0 0 no-repeat; }
@@ -47,4 +51,70 @@ header {
   text-transform: uppercase; }
   .header-nav-link:hover {
     text-decoration: underline; }
+
+footer {
+  width: 620px;
+  margin: 0 auto;
+  border-top: 1px solid #405161; }
+
+.footer-nav {
+  padding-top: 5px;
+  text-align: center; }
+  .footer-nav > li {
+    display: inline-block;
+    padding-bottom: 5px; }
+
+.footer-nav-link {
+  text-decoration: none;
+  color: #00ccff;
+  font-weight: 700;
+  border-left: 1px solid #00ccff;
+  font-size: 0.8em;
+  padding: 0 10px;
+  text-transform: uppercase; }
+  .footer-nav-link.no-border {
+    border-left: 0; }
+  .footer-nav-link:hover {
+    text-decoration: underline; }
+
+.footer-logo {
+  display: block;
+  width: 228px;
+  height: 49px;
+  background-position: 0 -67px;
+  text-indent: -9999px;
+  margin: 35px auto 0; }
+
+.logo-carousel-panel {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  margin-top: 500px; }
+
+.logo-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9999px;
+  height: 100%; }
+  .logo-carousel > li {
+    float: left;
+    height: 100%;
+    line-height: 100px; }
+    .logo-carousel > li > a {
+      display: inline-block;
+      text-indent: -9999px;
+      vertical-align: middle; }
+
+.logo-carousel-side {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100px;
+  height: 100%;
+  sbackground: pink; }
+  .logo-carousel-side.left {
+    left: 0; }
+  .logo-carousel-side.right {
+    right: 0; }
 

@@ -1,15 +1,20 @@
+html, body {
+	height: 100%;
+}
+
 body
 {
 	background: #000000 url('../img/bg.jpg') 50% 0 no-repeat;
 }
 
 .content {
-	background-color: #111621;
-	opacity: 0.9;
 	width: 660px;
 	margin: 0 auto;
+	min-height: 100%;
+	position: relative;
 
-	min-height: 800px;
+	background-color: #111621;
+	opacity: 0.9;
 }
 
 .sprites {

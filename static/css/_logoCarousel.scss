@@ -1,0 +1,46 @@
+.logo-carousel-panel {
+	position: relative;
+	overflow: hidden;
+	height: 100px;
+
+	margin-top: 500px;
+}
+
+.logo-carousel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 9999px;
+	height: 100%;
+
+	> li {
+		float: left;
+		height: 100%;
+		line-height: 100px;
+		
+		> a {
+			display: inline-block;
+			text-indent: -9999px;
+			vertical-align:middle;
+		}
+	}
+}
+
+.logo-carousel-side {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+
+	width: 100px;
+	height: 100%;
+	
+	&.left {
+		left: 0;
+	}
+
+	&.right {
+		right: 0;
+	}
+
+	sbackground: pink;
+}
