@@ -9,12 +9,12 @@ body {
   margin: 0 auto;
   min-height: 100%;
   position: relative;
-  background-color: #111621;
-  opacity: 0.9; }
+  background: #111621;
+  background: rgba(17, 22, 33, 0.9); }
 
 .main-panel {
   position: relative;
-  background-color: green;
+  sbackground-color: green;
   min-height: 500px; }
 
 .sprites {
@@ -30,6 +30,15 @@ body {
 
 .clear {
   zoom: 1; }
+
+.is-hidden {
+  display: none; }
+
+.page-heading {
+  font-size: 2.1em;
+  color: #ffffff;
+  padding: 25px 0 0 20px;
+  text-transform: uppercase; }
 
 header {
   position: relative;
@@ -116,10 +125,29 @@ nav {
   .nav-link:hover, .nav-link.is-active, .nav-link:active {
     background-color: #ffffff; }
 
+.breadcrumb {
+  padding: 10px 0 0 20px; }
+  .breadcrumb > li {
+    float: left;
+    padding-right: 4px;
+    color: #05C3F5;
+    font-weight: 700;
+    font-size: 1.1em; }
+  .breadcrumb.club {
+    padding-top: 55px; }
+
+.breadcrumb-link {
+  text-decoration: none;
+  color: #05C3F5;
+  margin-right: 5px; }
+  .breadcrumb-link.is-active {
+    color: #a3b7c4; }
+
 footer {
   width: 620px;
   margin: 0 auto;
-  border-top: 1px solid #405161; }
+  border-top: 1px solid #405161;
+  padding-bottom: 35px; }
 
 .footer-nav {
   padding-top: 5px;
@@ -152,8 +180,125 @@ footer {
 .search-panel {
   position: absolute;
   top: 0;
-  right: 0;
-  background-color: pink; }
+  right: 20px; }
+
+.search-label {
+  color: #a3b6c3;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding-right: 10px; }
+
+.search-input {
+  background-color: #4b6275;
+  border: none;
+  font-size: 0.8em;
+  padding: 5px;
+  height: 27px;
+  border-radius: 5px;
+  min-width: 165px; }
+
+.search-btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #05c3f5;
+  color: #05243a;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 10px 13px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+  .search-btn:hover, .search-btn.is-active, .search-btn:active {
+    background-color: #ffffff; }
+
+.filter-section {
+  padding-top: 160px; }
+
+.filter-panel-group {
+  text-align: center;
+  color: #ffffff; }
+  .filter-panel-group > h2 {
+    font-size: 2.1em;
+    margin-bottom: 16px;
+    text-transform: uppercase; }
+  .filter-panel-group > h3 {
+    font-size: 1.0em; }
+
+.filter-panel {
+  width: 532px;
+  background-color: #040b17;
+  margin: 20px auto 0;
+  padding: 20px 0 25px;
+  position: relative; }
+
+.filter-panel:before {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 50%;
+  margin-left: -9px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 10px solid #040b17; }
+
+.filter-sentence {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-weight: 700; }
+  .filter-sentence > span {
+    cursor: pointer;
+    position: relative; }
+  .filter-sentence > .theme-1 {
+    color: #00ccff; }
+  .filter-sentence > .theme-2 {
+    color: #ccff33; }
+
+.filter-selection {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px; }
+  .filter-selection.city {
+    top: 0;
+    left: 155px; }
+  .filter-selection.area {
+    top: 0;
+    left: 365px; }
+  .filter-selection.club {
+    top: 40px;
+    left: 162px; }
+  .filter-selection.day {
+    top: 40px;
+    left: 252px; }
+  .filter-selection.genre {
+    top: 40px;
+    left: 392px; }
+  .filter-selection > li {
+    color: #999999;
+    font-size: 1.1em;
+    font-weight: 700; }
+
+.filter-form {
+  text-align: center; }
+  .filter-form > .search-btn {
+    margin-top: 30px;
+    background-color: #ccff33;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s; }
+    .filter-form > .search-btn:hover, .filter-form > .search-btn.is-active, .filter-form > .search-btn:active {
+      background-color: #ffffff; }
 
 .logo-carousel-panel {
   position: relative;
@@ -186,4 +331,253 @@ footer {
     left: 0; }
   .logo-carousel-side.right {
     right: 0; }
+
+.club-list-panel {
+  overflow: hidden;
+  position: relative;
+  width: 640px;
+  margin: 0 auto;
+  height: 1028px; }
+
+.club-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9999px;
+  height: 100%;
+  -webkit-transition: left 0.5s;
+  -moz-transition: left 0.5s;
+  -ms-transition: left 0.5s;
+  -o-transition: left 0.5s;
+  transition: left 0.5s; }
+  .club-list > li {
+    float: left;
+    width: 640px;
+    height: 100%; }
+
+.club-list-item {
+  float: left;
+  width: 300px;
+  margin: 0 10px 30px; }
+
+.club-list-area {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #05C3F5;
+  text-align: right;
+  padding: 9px 0; }
+
+.club-list-img-link {
+  display: block;
+  text-decoration: none;
+  position: relative; }
+  .club-list-img-link:hover > .club-list-name {
+    color: #ccff00; }
+  .club-list-img-link:hover > .club-list-logo {
+    opacity: 1; }
+
+.club-list-name {
+  font-size: 1.4em;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 11px 0 9px 0; }
+
+.club-list-description {
+  color: #cccccc;
+  font-size: 0.8em;
+  line-height: 1.1em; }
+
+.club-list-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 296px;
+  height: 186px;
+  line-height: 186px;
+  border: 2px solid #ccff00;
+  background: black;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.club-list-logo-img {
+  display: inline-block;
+  vertical-align: middle; }
+
+.club-list-pagination-panel {
+  width: 620px;
+  margin: 20px auto 0;
+  color: #cccccc;
+  font-weight: 700;
+  font-size: 1.1em; }
+
+.club-list-pagination-results {
+  float: left;
+  width: 140px; }
+
+.club-list-pagination {
+  float: left;
+  width: 340px;
+  text-align: center; }
+  .club-list-pagination > li {
+    display: inline-block;
+    border-left: 1px solid #cccccc;
+    padding: 0 10px; }
+    .club-list-pagination > li:first-child {
+      border-left: none; }
+    .club-list-pagination > li.is-available {
+      color: #00ccff;
+      cursor: pointer; }
+
+.club-list-pagination-nav {
+  float: left;
+  width: 140px;
+  text-align: right; }
+  .club-list-pagination-nav > .separator {
+    padding: 0 5px; }
+  .club-list-pagination-nav > .is-available {
+    color: #00ccff;
+    cursor: pointer; }
+
+.share-panel {
+  position: absolute;
+  top: 100px;
+  right: 20px; }
+
+.share-name {
+  float: left;
+  padding: 2px 0 0 0;
+  color: #05C3F5; }
+
+.share-list {
+  float: left; }
+  .share-list > li {
+    float: left;
+    padding-left: 20px; }
+
+.share-list-link {
+  display: inline-block;
+  vertical-align: middle; }
+  .share-list-link.mail {
+    width: 16px;
+    height: 11px;
+    background-position: 0 -116px; }
+  .share-list-link.twitter {
+    width: 18px;
+    height: 13px;
+    background-position: -16px -116px; }
+  .share-list-link.facebook {
+    width: 8px;
+    height: 16px;
+    background-position: -34px -116px; }
+  .share-list-link.google {
+    width: 16px;
+    height: 14px;
+    background-position: -42px -116px; }
+
+.club-panel {
+  width: 620px;
+  margin: 0 auto; }
+
+.club-area {
+  width: 50%;
+  color: #ffffff;
+  float: left;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 700;
+  padding-top: 6px; }
+
+.club-registration-list {
+  width: 50%;
+  float: left;
+  text-align: right; }
+  .club-registration-list > li {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 700;
+    border-left: 1px solid #05C3F5;
+    padding-left: 20px; }
+    .club-registration-list > li:first-child {
+      border-left: none;
+      padding-right: 16px;
+      padding-left: 0; }
+
+.club-registration-list-link {
+  text-decoration: none;
+  color: #05C3F5; }
+
+.club-img {
+  width: 620px;
+  height: 192px;
+  padding: 15px 0; }
+
+.club-description {
+  width: 380px;
+  margin-right: 20px;
+  float: left; }
+
+.club-description-copy {
+  color: #cccccc;
+  font-size: 0.9em; }
+  .club-description-copy:first-child {
+    padding-bottom: 20px; }
+
+.club-contacts {
+  width: 220px;
+  float: left; }
+
+.club-contacts-heading {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: #ffffff;
+  padding-bottom: 15px; }
+
+.club-contacts-map {
+  width: 90px;
+  background-color: green;
+  float: left; }
+
+.club-contacts-google-map {
+  width: 86px;
+  height: 86px;
+  border: 2px solid #05C3F5; }
+
+.club-contacts-details {
+  width: 115px;
+  margin-left: 15px;
+  float: left;
+  color: #05C3F5;
+  font-size: 0.8em;
+  font-weight: 700; }
+  .club-contacts-details > span {
+    display: block; }
+  .club-contacts-details > .phone {
+    margin-top: 17px; }
+
+.bookings-panel {
+  background-color: green;
+  margin-top: 40px;
+  display: block; }
+
+.put-my-name-down-panel {
+  width: 300px;
+  margin-right: 20px;
+  float: left;
+  background-color: gray; }
+
+.book-a-table-panel {
+  width: 300px;
+  float: left;
+  background-color: gray; }
+
+.booking-panel-title {
+  color: #ffffff;
+  font-size: 1.3em;
+  text-transform: uppercase; }
 

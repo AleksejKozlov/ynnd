@@ -1,0 +1,102 @@
+.club-panel {
+	width: 620px;
+	margin: 0 auto;
+}
+
+.club-area {
+	width: 50%;
+	color: #ffffff;
+	float: left;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	font-weight: 700;
+	padding-top: 6px;
+}
+
+.club-registration-list {
+	width: 50%;
+	float: left;
+	text-align: right;
+
+	> li {
+		display: inline-block;
+		font-size: 0.9em;
+		font-weight: 700;
+		border-left: 1px solid #05C3F5;
+		padding-left: 20px;
+
+		&:first-child {
+			border-left: none;
+			padding-right: 16px;
+			padding-left: 0;
+		}
+	}
+}
+
+.club-registration-list-link {
+	text-decoration: none;
+	color: #05C3F5;
+}
+
+.club-img {
+	width: 620px;
+	height: 192px;
+	padding: 15px 0;
+}
+
+.club-description {
+	width: 380px;
+	margin-right: 20px;
+	float: left;
+}
+
+.club-description-copy {
+	color: #cccccc;
+	font-size: 0.9em;
+
+	&:first-child {
+		padding-bottom: 20px;
+	}
+
+}
+
+.club-contacts {
+	width: 220px;
+	float: left;
+}
+
+.club-contacts-heading {
+	text-transform: uppercase;
+	font-size: 1.3em;
+	color: #ffffff;
+	padding-bottom: 15px;
+}
+
+.club-contacts-map {
+	width: 90px;
+	background-color: green;
+	float: left;
+}
+
+.club-contacts-google-map {
+	width: 86px;
+	height: 86px;
+	border: 2px solid #05C3F5;
+}
+
+.club-contacts-details {
+	width: 115px;
+	margin-left: 15px;
+	float: left;
+	color: #05C3F5;
+	font-size: 0.8em;
+	font-weight: 700;
+
+	> span {
+		display: block;
+	}
+
+	> .phone {
+		margin-top: 17px;
+	}
+}

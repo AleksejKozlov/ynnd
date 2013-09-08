@@ -1,0 +1,49 @@
+.share-panel {
+	position: absolute;
+	top: 100px;
+	right: 20px;
+}
+
+.share-name {
+	float: left;
+	padding: 2px 0 0 0;
+	color: #05C3F5;
+}
+
+.share-list {
+	float: left;
+
+	> li {
+		float: left;
+		padding-left: 20px;
+	}
+}
+
+.share-list-link {
+	display: inline-block;
+	vertical-align: middle;
+
+	&.mail {
+		width: 16px;
+		height: 11px;
+		background-position: 0 -116px;
+	}
+
+	&.twitter {
+		width: 18px;
+		height: 13px;
+		background-position: -16px -116px;
+	}
+
+	&.facebook {
+		width: 8px;
+		height: 16px;
+		background-position: -34px -116px;
+	}
+
+	&.google {
+		width: 16px;
+		height: 14px;
+		background-position: -42px -116px;
+	}
+}

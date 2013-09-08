@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>YNND</title>
     
     <link rel="stylesheet" href="<?php echo base_url();?>static/css/default.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>static/css/core.css">
@@ -37,11 +37,55 @@
         </nav>
         
         <section class="main-panel">
-            <form class="search-panel">
-                <label>Search</label>
-                <input type="text" />
-                <button type="submit">Go</button>
+            <form class="search-panel" action="" method="POST">
+                <label class="search-label">Search</label>
+                <input class="search-input" type="text" />
+                <button class="search-btn" type="submit">Go</button>
             </form>
+            
+            <section class="filter-section">
+                <hgroup class="filter-panel-group">
+                    <h2>Let's Get Started</h2>
+                    <h3>Enter your gameplane below...</h3>
+                </hgroup>
+            
+                <div class="filter-panel">
+                    <p class="filter-sentence">
+                        "I'm in <span class="theme-1" data-filter="city">London</span>, I want to go out in <span class="theme-2" data-filter="area">any area</span>, <br/> I want to go to <span class="theme-1" data-filter="club">any club</span> on <span class="theme-1" data-filter="day">any day</span> and I like <span class="theme-1" data-filter="genre">any genre</span>".
+                    </p>
+                    
+                    <ul class="filter-selection city is-hidden">
+                        <li>London,</li>
+                        <li>Moscow</li>
+                    </ul>
+                    
+                    <ul class="filter-selection area is-hidden">
+                        <li>Shoreditch,</li>
+                        <li>Canary Wharf</li>
+                    </ul>
+                    
+                    <ul class="filter-selection club is-hidden">
+                        <li>Club 1,</li>
+                        <li>Club 2</li>
+                    </ul>
+                    
+                    <ul class="filter-selection day is-hidden">
+                        <li>Today,</li>
+                        <li>Tomorrow</li>
+                    </ul>
+                    
+                    <ul class="filter-selection genre is-hidden">
+                        <li>Genre 1,</li>
+                        <li>Genre 2</li>
+                    </ul>
+                </div>
+                
+                <form class="filter-form" action="" method="POST">
+                    <input class="is-hidden" type="text" />
+                    <button class="search-btn" type="submit">Go</button>
+                </form>
+            </section>
+            
         </section>
         
         <section class="logo-carousel-panel">

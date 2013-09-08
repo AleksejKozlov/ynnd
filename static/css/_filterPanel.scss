@@ -1,0 +1,113 @@
+.filter-section {
+	padding-top: 160px; 
+}
+
+.filter-panel-group {
+	text-align: center;
+	color: #ffffff;
+
+	> h2 {
+		font-size: 2.1em;
+		margin-bottom: 16px;
+		text-transform: uppercase;
+	}
+
+	> h3 {
+		font-size: 1.0em;
+	}
+}
+
+.filter-panel {
+	width: 532px;
+	background-color: #040b17;
+	margin: 20px auto 0;
+	padding: 20px 0 25px;
+	position: relative;
+}
+
+.filter-panel:before {
+	position: absolute;
+	content: "";
+	bottom: -10px;
+	left: 50%;
+	margin-left: -9px;
+	
+	width: 0; 
+	height: 0; 
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-top: 10px solid #040b17;
+}
+
+.filter-sentence {
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.1em;
+	line-height: 1.2em;
+	font-weight: 700;
+
+	> span {
+		cursor: pointer;
+		position: relative;
+	}
+
+	> .theme-1 {
+		color: #00ccff;
+	}
+
+	> .theme-2 {
+		color: #ccff33;
+	}
+}
+
+.filter-selection {
+	position: absolute;
+	background-color: #ffffff;
+	padding: 10px;
+
+	&.city {
+		top: 0;
+		left: 155px;
+	}
+
+	&.area {
+		top: 0;
+		left: 365px;
+	}
+
+	&.club {
+		top: 40px;
+		left: 162px;
+	}
+
+	&.day {
+		top: 40px;
+		left: 252px;
+	}
+
+	&.genre {
+		top: 40px;
+		left: 392px;
+	}
+
+	> li {
+		color: #999999;
+		font-size: 1.1em;
+		font-weight: 700;
+	}
+}
+
+.filter-form {
+	text-align: center;
+	
+	> .search-btn {
+		margin-top: 30px;
+		background-color: #ccff33;
+
+		@include transition(background-color .5s);
+
+		&:hover, &.is-active, &:active {
+			background-color: #ffffff;
+		}
+	}
+}
