@@ -94,15 +94,78 @@
                     </div>
                 </div>
                 
-                <div class="bookings-panel">
+                <div class="bookings-panel clear">
                     <div class="booking-panel put-my-name-down-panel">
-                        <h5 class="booking-panel-title">Put your name down</h5>
+                        <h5 class="booking-panel-heading">Put your name down</h5>
+                        
+                        <p class="booking-panel-login-copy">You need to <a class="booking-panel-login-link" href="">Sign in</a> first.</p>
                     </div>
                 
                     <div class="booking-panel book-a-table-panel">
-                        <h5 class="booking-panel-title">Book a table</h5>
+                        <h5 class="booking-panel-heading">Book a table</h5>
+                        
+                        <p class="booking-panel-login-copy">You need to <a class="booking-panel-login-link" href="">Sign in</a> first.</p>
                     </div>
                 </div>
+                
+                <div class="latest-panel">
+                    <ul class="latest-nav-list">
+                        <li><a class="latest-nav-list-link" href="">Events at The Roof Gardens</a></li>
+                        <li><a class="latest-nav-list-link" href="">See all Events</a></li>
+                    </ul>
+                    <h5 class="latest-panel-heading">Events coming up at the Roof Gardends</h5>
+                    
+                    <ul class="latest-list clear">
+                        <?php
+                            for ($i = 0; $i < 3; $i++) {
+                                $odd = ($i % 2 == 0) ? 'odd' : '';
+
+                                echo "<li class='".$odd."'>";
+                                    echo "<a class='latest-img-link' href='' style='background-image: url(../static/img/club-event.jpg);'></a>"; 
+                                    echo "<div class='latest-copy'>";
+                                        echo "<span class='latest-heading theme-1'>Event Name</span>";
+                                        echo "<span class='latest-subheading theme-1'>Sat 15 July 19:00 - 03:00</span>";
+                                        echo "<p class='latest-description theme-1'>Dinner with Burlesque stage shows, followed by club night, featuring classic dance floor fillers till 3am.</p>";
+                                    echo "</div>";    
+                                echo "</li>";
+                            }
+                        ?>
+                    </ul>
+                </div>
+                
+                <div class="latest-panel">
+                    <ul class="latest-nav-list">
+                        <li><a class="latest-nav-list-link" href="">Twitter</a></li>
+                        <li><a class="latest-nav-list-link" href="">Facebook</a></li>
+                    </ul>
+                    <h5 class="latest-panel-heading">Latest news from the Roof Gardends</h5>
+                    
+                    <ul class="latest-list clear">
+                        <?php
+                            for ($i = 0; $i < 3; $i++) {
+                                $odd = ($i % 2 == 0) ? 'odd' : '';
+
+                                echo "<li class='higher ".$odd."'>";
+                                    echo "<a class='latest-img-link' href='' style='background-image: url(../static/img/club-event.jpg);'></a>"; 
+                                    echo "<div class='latest-copy'>";
+                                        echo "<span class='latest-heading theme-2'>Name Surname</span>";
+                                        echo "<span class='latest-subheading theme-2'>@nameSurname</span>";
+                                        echo "<p class='latest-description theme-2'>Dinner with Burlesque stage shows, followed by club night, featuring classic dance floor fillers till 3am. <span class='latest-twitter-id'>#YNND</span></p>";
+                                        echo "<span class='latest-time'>58 minutes ago</span>";
+                                    echo "</div>";    
+                                echo "</li>";
+                            }
+                        ?>
+                    </ul>
+                </div>
+                
+                <div class="latest-panel">
+                    <ul class="latest-nav-list">
+                        <li class="alone"><a class="latest-nav-list-link" href="">See all Club &amp; Venues</a></li>
+                    </ul>
+                    <h5 class="latest-panel-heading">Other clubs &amp; venus you might like</h5>
+                </div>    
+                
             </div>
             
         </section>

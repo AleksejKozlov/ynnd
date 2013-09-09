@@ -1,6 +1,5 @@
 .bookings-panel {
-	background-color: green;
-	margin-top: 40px;
+	margin: 40px 0 20px;
 	display: block;
 }
 
@@ -8,17 +7,30 @@
 	width: 300px;
 	margin-right: 20px;
 	float: left;
-	background-color: gray;
 }
 
 .book-a-table-panel {
 	width: 300px;
 	float: left;
-	background-color: gray;
 }
 
-.booking-panel-title {
+.booking-panel-heading {
 	color: #ffffff;
 	font-size: 1.3em;
 	text-transform: uppercase;
+}
+
+.booking-panel-login-copy {
+	font-size: 0.9em;
+	color: #ffffff;
+	padding: 5px 0;
+}
+
+.booking-panel-login-link {
+	font-weight: 700;
+	color: #05C3F5;
+
+	&:hover {
+		text-decoration: none;
+	}
 }
